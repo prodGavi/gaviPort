@@ -1,0 +1,20 @@
+.thankYouMain {
+    display: block;
+    margin: 0 auto;
+    color: aliceblue;
+    width: 60vw;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 1px 1px #000000;
+}
+
+#contactMeContainer {
+    background-color: #e59ecd5c;
+}
+
+@media (max-width:576px) {
+    .thankYouMain {
+        width: 100vw;
+        margin-top: 30px;
+    }
+}

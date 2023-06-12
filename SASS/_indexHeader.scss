@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titleContainer {
+    width: 100vw;
+    height: 400px;
+    background-image: url("../images/mainBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    overflow: hidden;
+    border-bottom: 2px solid #EDDFEC;
+    border-top: 2px solid #EDDFEC;
+    animation: glitch 4s infinite linear;
+    ;
+}
+
+@keyframes glitch {
+    0% {
+        background-image: url("../images/mainBackground.jpg");
+        opacity: 0.9;
+    }
+
+    45% {
+        background-image: url("../images/mainBackground.jpg");
+        opacity: 0.8;
+    }
+
+    100% {
+        background-image: url("../images/mainBackground.jpg");
+        opacity: 0.9;
+
+    }
+}
+
+
+#gaviLogo {
+    width: 220px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0 0 0.65rem black);
+    transition: all .1s ease-in-out;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateY(-200%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#gaviLogo:hover {
+    filter: drop-shadow(0 0 .99rem black);
+    scale: 1.1;
+}
+
+#shape1 {
+    width: 35vw;
+    margin-top: 60px;
+}
+
+@media(max-width:576px) {
+    #shape1 {
+        margin-top: 40px;
+    }
+
+    .titleContainer {
+        width: 100vw;
+        height: 300px;
+    }
+
+}

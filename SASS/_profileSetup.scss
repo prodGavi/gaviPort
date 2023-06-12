@@ -1,0 +1,78 @@
+#profilePic {
+    display: block;
+    max-width: 400px;
+    max-height: 391px;
+    margin: 0 auto;
+}
+
+.bioSide1,
+.bioSide2 {
+    overflow: hidden;
+    background-color: #1e1b1d;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    h2 {
+        margin-bottom: 20px;
+        text-decoration: underline;
+        font-family: monospace;
+    }
+}
+
+.bioSide1 {
+    background: #e59ecd8e;
+    /* Fallback */
+    animation: color 5s infinite linear;
+}
+
+@keyframes color {
+    0% {
+        background: #e59ecd5c;
+    }
+
+    50% {
+        background: #e59ecd8e;
+    }
+
+    100% {
+        background: #e59ecd5c;
+    }
+}
+
+.bioSide2 {
+    padding: 25px;
+}
+
+
+.skillIcon {
+    transition: all .2s ease-in-out;
+}
+
+
+.skillIcon:hover {
+    transform: scale(1.3);
+}
+
+#profileShape {
+    display: block;
+    position: absolute;
+    width: 19vw;
+    top: 104vh;
+    left: 53vw;
+}
+
+#porfileContainer {
+    margin-left: 11vw;
+}
+
+@media(max-width:576px) {
+    #porfileContainer {
+        margin-left: 0vw;
+    }
+
+    #profilePic {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+}
